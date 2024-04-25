@@ -1,0 +1,329 @@
+:root {
+  --orange: #ffaa00;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+*::selection {
+  background: var(--orange);
+  color: #fff;
+}
+html {
+  font-size: 63%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.heading span {
+  font-size: 3.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--orange);
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+}
+.heading span.space {
+  background: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 10%;
+}
+
+header .logo {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: #fff;
+  padding-left: 30px;
+  text-transform: uppercase;
+  display: flex;
+  flex: 1;
+}
+
+header .logo span {
+  color: var(--orange);
+}
+header .navbar a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+header .navbar a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0.8rem;
+}
+
+header .icons i {
+  font-size: 3.5rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+body {
+  height: 200rem;
+}
+
+header img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+}
+
+.home .content {
+  text-align: center;
+}
+
+.home .content h3 {
+  font-size: 4.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.home .content p {
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.logo span {
+  margin-right: 10px;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.book .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.book .row .image {
+  flex: 1 1 40rem;
+}
+.book .row .image img {
+  width: 100%;
+  height: auto;
+}
+
+.book .row form {
+  flex: 1 1 40rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.book .row form .inputBox {
+  padding: 0.5rem 0;
+}
+
+.book .row form .inputBox input {
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 1.7rem;
+  color: #333;
+  text-transform: none;
+}
+
+form .inputBox h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #666;
+}
+form .btn {
+  font-size: 22px;
+  color: rgb(67, 63, 63);
+  font-weight: 600;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #ffaa00;
+  transition: 500ms;
+  cursor: pointer;
+}
+form .btn:hover {
+  color: #ffaa00;
+  background: rgb(67, 63, 63);
+}
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contact .row .image {
+  flex: 1 1 35rem;
+}
+
+.contact .row .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact .row form {
+  flex: 1 1 50rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.contact .row form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .row form .inputBox input,
+.contact .row form textarea {
+  width: 49%;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  background: #f7f7f7;
+  text-transform: none;
+}
+
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
+  width: 100%;
+}
+.btnnn {
+  font-size: 22px;
+  color: rgb(67, 63, 63);
+  font-weight: 600;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #ffaa00;
+  transition: 500ms;
+  cursor: pointer;
+}
+.btnnn:hover {
+  background-color: #ffaa00;
+  color: rgb(67, 63, 63);
+}
+.bbtn:hover {
+  background-color: #ffaa00;
+  color: rgb(67, 63, 63);
+}
+.bbtn {
+  font-size: 22px;
+  color: rgb(67, 63, 63);
+  font-weight: 600;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #ffaa00;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.footer {
+  background: #333;
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer .box-container .box {
+  padding: 1rem 0;
+  flex: 1 1 25rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.4rem;
+  padding: 0.7rem 0;
+  color: #eee;
+}
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  padding: 0.7rem 0;
+  color: #eee;
+}
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.7rem;
+  padding: 0.7rem 0;
+  color: #eee;
+}
+ .footer .box-container .box a:hover {
+  color: var(--orange);
+  text-decoration: underline;
+} 
+.footer .credit {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+.footer .credit span {
+  color: var(--orange);
+}
+.messagebutton {
+  font-size: 20px;
+  background-color: lightblue;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition-duration: 300ms;
+  border-radius: 5px;
+}
+.messagebutton:hover {
+  color: darkorange;
+}
